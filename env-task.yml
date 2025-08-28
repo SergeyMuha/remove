@@ -1,6 +1,5 @@
-
 params:
-  NAME: 
+  USER: 
   SURNAME:
 platform: linux
 image_resource:
@@ -14,5 +13,5 @@ run:
   args:
     - -c
     - |
-      Hello $NAME $SURNAME. Today is $(date)
+      Hello $USER $SURNAME. Today is $(date)
       env
