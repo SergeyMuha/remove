@@ -13,5 +13,5 @@ run:
   args:
     - -c
     - |
-      Hello $NAME $SURNAME. Today is $(date)
+      echo "Hello $NAME $SURNAME. Today is $(date)"
       env
