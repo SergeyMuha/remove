@@ -1,0 +1,18 @@
+
+params:
+  NAME: 
+  SURNAME:
+platform: linux
+image_resource:
+  type: docker-image
+  source:
+    repository: ubuntu
+inputs:
+  - name: source-code
+run:
+  path: sh
+  args:
+    - -c
+    - |
+      Hello $NAME $SURNAME. Today is $(date)
+      env
